@@ -62,3 +62,4 @@ script:
         entity_id: light.kitchen_lights
         brightness: 100
 ```
+The resulting entity ID for the Light Group will be light.<name> where <name> is the value of your name: key/value pair in using lower case and the underscore for spaces. e.g. light.kitchen_lights
