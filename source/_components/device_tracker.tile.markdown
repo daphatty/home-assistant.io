@@ -47,3 +47,5 @@ device_tracker:
 {% endconfiguration %}
 
 Multiple Tile accounts can be used by repeating the `tile` platform. Tracked devices in `known_devices.yaml` will be named `tile_<tile_identifier>`. You can find `<tile_identifier>` in the Tile app by clicking on a tile.
+
+Note: If your configured tile does not appear in Home Assistant after configuring the "required" settings, it is possible the device has been detected as Inactive. This is typically evidenced by a "No Tiles Found" error in the /config/home_assistant.log file. Adding `show_inactive: true` to your settings in the configuration.yaml will resolve this behavior.  
